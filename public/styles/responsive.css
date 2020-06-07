@@ -45,6 +45,24 @@
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 550px) {
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
 
+    form legend {
+        flex-direction: column;
+    }
+
+    form legend span {
+        margin-top: 15px;
+    }
+
+    form fieldset {
+        width: 90%;
+    }
+
+    form button {
+        width: 230px;
+    }
 }
