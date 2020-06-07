@@ -76,6 +76,8 @@ function handleSelectedItem(event) {
 
   const itemId = event.target.dataset.id
 
+  console.log('ITEM ID: ', itemId)
+
   // verificar se existem items selecionados, se sim
   // pegar os itens selecionados
 
@@ -98,6 +100,8 @@ function handleSelectedItem(event) {
     //se não estiver selecionado, adicionar à seleção
     selectedItems.push(itemId)
   }
+
+  console.log('selectedItems: ', selectedItems)
 
   // Atualizar o compo escondido com os itens selecionados
   collectedItems.value = selectedItems
